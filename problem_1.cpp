@@ -4,7 +4,8 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "gmpxx.h"
+#include <gmpxx.h>
+#include <array>
 
 // Find A, B, M, and x[11] given the following five consecutive terms in the sequence (*):
 // x[0] = 56687054115473550533
@@ -31,7 +32,33 @@ int main()
 
     // TODO: solution
 
+    std::array<mpz_class, 12> X{
+        56687054115473550533_mpz,
+        71501923691929981066_mpz,
+        1162551557687152936_mpz,
+        88117163952857350660_mpz,
+        16754986973331962115_mpz,
+        0_mpz,
+        0_mpz,
+        0_mpz,
+        0_mpz,
+        0_mpz,
+        66775494619620378439_mpz,
+        0_mpz
+    };
+
+    mpz_class const lower_bound_m = std::max<mpz_class>({
+        56687054115473550533_mpz,
+        71501923691929981066_mpz,
+        1162551557687152936_mpz,
+        88117163952857350660_mpz,
+        16754986973331962115_mpz,
+        66775494619620378439_mpz
+    }) + 1;
+
     // TODO: implement
+
+    std::cout << lower_bound_m << std::endl;
 
     return EXIT_SUCCESS;
 }

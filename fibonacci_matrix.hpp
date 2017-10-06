@@ -15,7 +15,7 @@ public:
 
     using type = matrix<T, 2, 2>;
 
-    // Create a fibonacci matrix
+    // Create a Fibonacci matrix
     static inline constexpr type identity()
     {
         return type{ 1, 1, 1, 0 };

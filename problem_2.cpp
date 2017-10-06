@@ -4,7 +4,7 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "gmpxx.h"
+#include <gmpxx.h>
 
 // This is only a timing test.
 // Find the smallest safe prime Psafe greater than 10150.

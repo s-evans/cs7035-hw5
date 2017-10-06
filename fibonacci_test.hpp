@@ -8,7 +8,7 @@
 #include "discrete_exponent.hpp"
 #include "fibonacci_matrix.hpp"
 
-// Returns the fibonacci order offset for use in the fibonacci test for a given prime
+// Returns the Fibonacci order offset for use in the Fibonacci test for a given prime
 template<class Prime>
 inline int get_prime_offset( Prime possible_prime )
 {

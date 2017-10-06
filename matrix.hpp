@@ -61,7 +61,7 @@ public:
     // Destroy
     ~matrix() = default;
 
-    // Coppy
+    // Copy
     matrix( matrix const& ) = default;
 
     // Assign
