@@ -33,9 +33,9 @@ inline T inverse( T a, T b )
 
     while ( v3 != 0 ) {
         T const q = u3 / v3;
-        t1 = u1 - v1 * q;
-        t2 = u2 - v2 * q;
-        t3 = u3 - v3 * q;
+        T const t1 = u1 - v1 * q;
+        T const t2 = u2 - v2 * q;
+        T const t3 = u3 - v3 * q;
         u1 = v1;
         u2 = v2;
         u3 = v3;
